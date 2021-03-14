@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className='App'>
       <h1>COVID19 Information</h1>
       <SearchByCountry />
       <hr />
