@@ -18,10 +18,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Coronavirus COVID19 Information</h1>
+      <h1>COVID19 Information</h1>
       <SearchByCountry />
       <hr />
-      <button className="btn btn-primary" onClick={toggleSummary}>{toggleSummaryText}</button>
+      <button className="btn btn-primary m-3" onClick={toggleSummary}>{toggleSummaryText}</button>
       {showSummary && <WorldwideStatistics />}
     </div>
   )

@@ -10,15 +10,15 @@ const CountryStatistics = ({ country }) => {
   } = country
 
   return (
-    <div>
-      <h2>{Country}</h2>
-      <div>New Cases: {NewConfirmed}</div>
-      <div>Total Cases: {TotalConfirmed}</div>
-      <div>New Deatths: {NewDeaths}</div>
-      <div>Total Deatths: {TotalDeaths}</div>
-      <div>New Recovered: {NewRecovered}</div>
-      <div>Total Recovered: {TotalRecovered}</div>
-    </div>
+    <tr>
+      <td>{Country}</td>
+      <td>{NewConfirmed}</td>
+      <td>{TotalConfirmed}</td>
+      <td>{NewDeaths}</td>
+      <td>{TotalDeaths}</td>
+      <td>{NewRecovered}</td>
+      <td>{TotalRecovered}</td>
+    </tr>
   )
 }
 
