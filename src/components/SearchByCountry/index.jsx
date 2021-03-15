@@ -12,18 +12,17 @@ const SearchByCountry = () => {
     if (!selectedCountry) return;
 
     setLiveByCountry();
-    
+    setNoDataFound(true);
+
     const fetchLiveDataByCountry = async () => {
       try {
         const response = await fetchLiveByCountry(selectedCountry);
 
         if (response instanceof Array && response.length) {
           setLiveByCountry(response[0]);
-        } else {
-          setNoDataFound(true);
+          setNoDataFound(false);
         }
       } catch (err) {
-        setNoDataFound(true);
         console.error(err);
       }
     };
